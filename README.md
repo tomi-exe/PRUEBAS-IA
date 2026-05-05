@@ -1,26 +1,39 @@
-# IA-test
+# TaskFlow
 
-Repositorio para comparar modelos locales potentes de c骴igo usando Ollama + Aider.
+## Descripci贸n
+TaskFlow es una aplicaci贸n fullstack que permite gestionar tareas. Incluye un backend con Node.js y Express y un frontend con React y Vite.
 
-## Modelos probados
+## Estructura del Proyecto
+- `backend/`: Contiene el c贸digo del servidor.
+- `frontend/`: Contiene el c贸digo de la interfaz de usuario.
+- `README.md`: Descripci贸n del proyecto.
 
-- qwen2.5-coder-7b
-- deepseek-coder-6.7b
-- codegemma-7b
-- llama3.1-8b
-- qwen2.5-coder-14b-experimental
+## Requisitos
+- Node.js >= 14.0.0
+- npm >= 6.0.0
 
-## Objetivo
+## Instalaci贸n y Ejecuci贸n
 
-Evaluar si modelos locales pueden actuar como agentes de desarrollo para crear una app fullstack completa.
+### Backend
+1. Navega al directorio `backend/`.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Ejecuta `node server.js` para iniciar el servidor.
 
-## Criterios
+El backend estar谩 disponible en `http://localhost:3000`.
 
-- Funcionalidad
-- Calidad del c骴igo
-- Dise駉 frontend
-- Coherencia frontend/backend
-- Orden de carpetas
-- Cantidad de correcciones manuales
-- Facilidad para ejecutar
-- Rendimiento en hardware limitado
+### Frontend
+1. Navega al directorio `frontend/`.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Ejecuta `npm run dev` para iniciar el servidor de desarrollo.
+
+El frontend estar谩 disponible en `http://localhost:5173`.
+
+## Endpoints del Backend
+- GET /api/tasks: Obtiene todas las tareas.
+- POST /api/tasks: Crea una nueva tarea.
+- PUT /api/tasks/:id: Actualiza una tarea existente.
+- DELETE /api/tasks/:id: Elimina una tarea.
+
+## Notas
+- La aplicaci贸n utiliza CORS para permitir solicitudes desde `http://localhost:5173`.
+- Las tareas se gestionan en memoria, por lo que no persisten entre reinicios del servidor.
