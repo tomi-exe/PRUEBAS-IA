@@ -8,6 +8,7 @@ Repositorio para comparar modelos locales potentes de código usando Ollama + Aid
 - deepseek-coder-6.7b
 - codegemma-7b
 - llama3.1-8b
+- qwen2.5-coder-14b-experimental
 
 ## Objetivo
 
@@ -22,3 +23,4 @@ Evaluar si modelos locales pueden actuar como agentes de desarrollo para crear u
 - Orden de carpetas
 - Cantidad de correcciones manuales
 - Facilidad para ejecutar
+- Rendimiento en hardware limitado
